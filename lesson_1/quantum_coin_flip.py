@@ -70,10 +70,10 @@ def main():
         
         # This will save plots as images you can view
         plot1 = plot_histogram(counts, title="Quantum Coin Flip")
-        plot1.savefig("coin_flip_results.png")
+        plot1.savefig("./lesson_1/coin_flip_results.png")
         
         plot2 = plot_histogram(bell_counts, title="Bell State Results")
-        plot2.savefig("bell_state_results.png")
+        plot2.savefig("./lesson_1/bell_state_results.png")
         
         print("\nPlots saved as 'coin_flip_results.png' and 'bell_state_results.png'")
         
