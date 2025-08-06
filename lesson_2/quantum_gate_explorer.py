@@ -41,7 +41,7 @@ class QuantumGateExplorer:
         # 1. Identity Gate (do nothing)
         print("\n🔵 1. IDENTITY GATE (I) - The 'Do Nothing' Gate")
         qc_i = QuantumCircuit(1, 1)
-        qc_i.i(0)  # Identity gate
+        qc_i.id(0)  # Identity gate
         qc_i.measure(0, 0)
         self.demonstrate_gate("Identity", qc_i, 
                             "Does absolutely nothing! Qubit stays |0⟩")
@@ -233,7 +233,7 @@ You now have the complete quantum toolbox! 🛠️⚛️
 
 def main():
     """Run the complete Lesson 2"""
-    prof = QuantumGateProfessor()
+    prof = QuantumGateExplorer()
     
     # Run all parts of the lesson
     prof.lesson_2a_single_qubit_gates()
